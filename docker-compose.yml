@@ -1,0 +1,15 @@
+version: "3.0"
+
+services:
+  tasks_db:
+    image: mongo:6.0.2
+    volumes:
+      - "./data:/data/db"
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: tasks
+      MONGO_INITDB_USER: user
+      MONGO_INITDB_PWD: pass
