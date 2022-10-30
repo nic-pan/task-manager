@@ -1,6 +1,8 @@
 # Docker
 data
 
+.env
+
 # Logs
 logs
 *.log
